@@ -36,10 +36,20 @@ namespace S3Tool.Data
             modelBuilder.Entity<Student>().HasKey(p => p.Id);
             // 设置Name字段的最大长度
             modelBuilder.Entity<Student>().Property("Name").HasMaxLength(32);
+
+            //gap
+            modelBuilder.Entity<GapEntity>().ToTable("EXT_GAP_INITIATIVES")
+                .HasKey(g => g.ID);
+            modelBuilder.Entity<GapEntity>().HasMany(g => g.Attachments).WithOne(ga => ga.GapEntity).HasForeignKey(g => g.GAP_ID);
+            modelBuilder.Entity<GapAttachmentEntity>().ToTable("EXT_GAP_INITIATIVE_ATTACHMENT")
+                .HasKey(ga => ga.ID);
+
             base.OnModelCreating(modelBuilder);
         }
 
         // DbSet属性
         public DbSet<Student> Students { get; set; }
+
+        public DbSet<GapEntity> GapEntities { get; set; }
     }
 }
