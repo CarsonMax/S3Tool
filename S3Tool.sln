@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S3Tool", "S3Tool\S3Tool.csproj", "{BBA7DA99-4DC8-477A-AC02-B58277FDE295}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBA7DA99-4DC8-477A-AC02-B58277FDE295}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBA7DA99-4DC8-477A-AC02-B58277FDE295}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBA7DA99-4DC8-477A-AC02-B58277FDE295}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBA7DA99-4DC8-477A-AC02-B58277FDE295}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9C6E3D00-ED46-470A-BBE7-0633758E2F26}
+	EndGlobalSection
+EndGlobal
